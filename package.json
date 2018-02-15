@@ -56,10 +56,12 @@
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
   },
+  "dependencies": {
+    "postinstall-build": "5.0.1"
+  },
   "peerDependencies": {
     "@angular/common": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "postinstall-build": "5.0.1"
+    "@angular/core": "^4.0.0"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",

@@ -45,7 +45,7 @@
     "explorer": "source-map-explorer ./dist/index.umd.js",
     "gh-pages": "rimraf docs && npm run docs && gulp copy:demo && gh-pages -d docs",
     "lint": "npm run tslint 'src/**/*.ts'",
-    "postinstall": "npm run build",
+    "postinstall": "npm run postinstall-build dist",
     "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "postversion": "git push && git push --tags",
     "prebuild": "rimraf dist tmp",
@@ -58,7 +58,8 @@
   },
   "peerDependencies": {
     "@angular/common": "^4.0.0",
-    "@angular/core": "^4.0.0"
+    "@angular/core": "^4.0.0",
+    "postinstall-build": "5.0.1"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
